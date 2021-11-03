@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Formulario Completo</title>
+</head>
+<body>
+    <form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+</br>
+    <table border=1>
+    <tr>
+        <th colspan="2">User Form</th> 
+    </tr>
+
+	<tr>
+        <td><label for="nombre">Enter name</label></td>
+        <td><input id="nombre" type="text" name="nombre"></td></br>
+	</tr>
+    <tr>
+        <td><label for="password">Enter password</label></td>
+        <td><input id="password" type="password" name="password"></td>
+    </br>
+    </tr>
+    <tr>
+        <td><label for="direccion">Enter Address</label></td>
+        <td><textarea name="direccion" id="direccion"></textarea><br/></td>
+    </tr>
+    <tr>
+        <td>Select Game</td><td>
+	<input type="checkbox" name="deportes[]" id="Hockey" value="Hockey">
+	<label for="Hockey">Hockey</label></br>
+    <input type="checkbox" name="deportes[]" id="Football" value="Football">
+    <label for="Football">Football</label></br>
+	<input type="checkbox" name="deportes[]" id="Badminton" value="deportes">
+    <label for="Badminton">Badminton</label></br>
+	<input type="checkbox" name="deportes[]" id="Cricket" value="deportes">
+    <label for="Cricket">Cricket</label></br>
+	<input type="checkbox" name="deportes[]" id="Volleyball" value="deportes">
+    <label for="Volleyball">Volleyball</label></br></td>
+	</tr>
+    <tr>
+        <td>Gender</td>
+		<td>
+		<input type="radio" name="sexo" id="Male" value="Male">
+        <label for="Male">Male</label>
+		<input type="radio" name="sexo" id="Female" value="Female">
+        <label for="Female">Female</label>
+		</td>
+    </tr>
+
+    <tr>
+        <td><label for="combo_edad">Select ur age</label></td>
+        <td><select name="edad" id="combo_edad">
+            <option value="17" name="combo_edad">17</option></br>
+            <option value="18" name="combo_edad">18</option></br>
+            <option value="Mayor de 19" name="combo_edad">Mayor de 19</option></br>
+            <option value="0" selected>Selecciona la opción</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <th colspan="2"><input type="file" name="examinar"></th>
+    </tr>
+	<tr>
+		<th colspan="2">
+        <input type="submit" value="Click Me">
+
+		<input type="submit" value="Submit Form">
+
+		<input type="reset" value="Restablecer"></th>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>
